@@ -33,6 +33,11 @@ app.use(session({
 }));
 
 
+app.get('/', (req, res) => {
+  res.send('your application is working...');
+});
+
+
 app.listen(process.env.PORT, () => {
   console.log(`listening on port ${process.env.PORT}...`);
 });
