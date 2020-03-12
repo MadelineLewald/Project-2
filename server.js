@@ -11,6 +11,9 @@ const dbupdateobject = {
   useFindAndModify: false
 }
 
+//controllers
+
+
 //connect to mongo
 mongoose.connect(process.env.DATABASE_URL, dbupdateobject);
 
