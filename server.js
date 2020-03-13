@@ -12,7 +12,19 @@ const dbupdateobject = {
 }
 
 //controllers
+const recipesController = require('./controllers/recipes.js');
+app.use('/recipes', recipesController);
 
+const usersController = require('./controllers/users.js');
+app.use('/users', usersController);
+
+const sessionController = require('./controllers/session.js');
+app.use('/session', sessionController);
+
+//home/index route
+app.get('/', (req, res) => {
+  res.render('home.ejs');
+});
 
 //connect to mongo
 mongoose.connect(process.env.DATABASE_URL, dbupdateobject);
@@ -25,7 +37,7 @@ db.on('open', () => {
     console.log('Connection made!');
 });
 
-//dependencies
+//middleware
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
