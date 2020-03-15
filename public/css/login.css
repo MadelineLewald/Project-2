@@ -1,0 +1,21 @@
+body {
+  background-color: #14FC92;
+  text-align: center;
+  font-family: 'Bellota', cursive;
+}
+h1 {
+  color: #FDC37D;
+  text-shadow: 2px 2px 2px #8C97E8;
+  font-size: 60px;
+  font-family: 'Fredoka One', cursive;
+}
+input {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+p {
+  color: #FC2B8A;
+  font-size: 25px;
+  padding: 15px;
+  margin: 0 20%;
+}
