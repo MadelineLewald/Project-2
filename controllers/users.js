@@ -13,7 +13,7 @@ router.post('/', (req, res) => {
     //creates user
     req.session.user = createdUser;
     //cookie provided to redirect you to index page when you create a user
-    re.redirect('/recipes');
+    res.redirect('/recipes');
   });
 });
 

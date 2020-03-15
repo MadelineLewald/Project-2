@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  background-color: #A1C8CE;
+  font-family: 'Bellota', cursive;
+}
+h1 {
+  color: #e500c5;
+  text-shadow: 2px 2px 2px 	#efc681;
+  font-family: 'Fredoka One', cursive;
+  font-size: 45px;
+
+}
+form {
+  color: #cc0018;
+  text-shadow: 2px 2px 2px 	#efc681;
+  font-size: 30px;
+  padding: 20px;
+}

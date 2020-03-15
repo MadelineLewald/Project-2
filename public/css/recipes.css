@@ -1,0 +1,45 @@
+body {
+  background-color: #BABFF2;
+  text-align: center;
+  font-family: 'Bellota', cursive;
+}
+h1 {
+  color: #38A028;
+  text-shadow: 2px 2px 2px pink;
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
+}
+img {
+  height: 400px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 17em;
+  margin-right: 17em;
+}
+li {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  color: #38A028;
+  text-decoration: none;
+  font-family: 'Bellota', cursive;
+  width: 100%;
+}
+.name {
+  margin: auto;
+  font-size: 30px;
+}
+.links {
+  line-height: 40px;
+  background: rgba(255, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 10em;
+}
+.link {
+  font-size: 20px;
+  font-weight: bolder;
+}

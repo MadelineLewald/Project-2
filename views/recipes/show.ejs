@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bellota|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/show.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><%= recipe.recipeName %></h1>
+    <div class="info">
+      <img src="<%=recipe.image%>" alt="Dead Plants">
+      <ul>
+        <li class="li">Ingredients:</li>
+        <li><%=recipe.ingredients%></li>
+        <li class="li">Cook Time:</li>
+        <li><%=recipe.cookTime%> minutes</li>
+        <li class="li">Directions:</li>
+        <li><%=recipe.recipe%></li>
+        <li>And all for about $<%=recipe.cost%>!!</li>
+      </ul>
+    </div>
+    <a href="/recipes">Back</a>
+    <a href="/recipes/<%=recipe.id%>/edit">Make a Change?</a>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bellota|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/newRecipes.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Want to add some new ideas?</h1>
+    <form action="/recipes" method="POST">
+      Image: <input type="text" name="image" /><br/>
+      Name: <input type="text" name="recipeName" /><br/>
+      Ingredients: <input type="text" name="ingredients" /><br/>
+      Cook Time: <input type="number" name="cookTime" /><br/>
+      Recipe: <input type="text" name="recipe" /><br/>
+      Cost: <input type="number" name="cost" /><br/>
+      <input class="button" type="submit" value="Save Recipe" />
+    </form>
+    <a href="/recipes">Back</a>
+  </body>
+</html>

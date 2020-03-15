@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bellota|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/edit.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>What do you need to change <br/> about this perfect recipe?</h1>
+    <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
+      Image: <input type="text" name="image" value="<%=recipe.image%>" /><br/>
+      Name: <input type="text" name="recipeName" value="<%=recipe.recipeName%>" /><br/>
+      Ingredients: <input type="text" name="ingredients" value="<%=recipe.ingredients%>" /><br/>
+      Cook Time: <input type="number" name="cookTime" value="<%=recipe.cookTime%>" /><br/>
+      Recipe: <input type="text" name="recipe" value="<%=recipe.recipe%>" /><br/>
+      Cost: <input type="number" name="cost" value="<%=recipe.cost%>" /><br/>
+      <input class="button" type="submit" value="Save Recipe" />
+    </form>
+    <a href="/recipes">Back</a>
+  </body>
+</html>

@@ -11,6 +11,16 @@ const dbupdateobject = {
   useFindAndModify: false
 }
 
+//middleware
+app.use(express.urlencoded({extended: true}));
+app.use(express.static('public'));
+app.use(methodOverride('_method'));
+app.use(session({
+	secret: 'feedmeseymour',
+  	resave: false,
+  	saveUninitialized: false
+}));
+
 //controllers
 const recipesController = require('./controllers/recipes.js');
 app.use('/recipes', recipesController);
@@ -20,6 +30,8 @@ app.use('/users', usersController);
 
 const sessionController = require('./controllers/session.js');
 app.use('/session', sessionController);
+
+
 
 //home/index route
 app.get('/', (req, res) => {
@@ -37,15 +49,6 @@ db.on('open', () => {
     console.log('Connection made!');
 });
 
-//middleware
-app.use(express.urlencoded({extended: true}));
-app.use(express.static('public'));
-app.use(methodOverride('_method'));
-app.use(session({
-	secret: 'feedmeseymour',
-  	resave: false,
-  	saveUninitialized: false
-}));
 
 
 app.get('/', (req, res) => {

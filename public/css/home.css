@@ -1,0 +1,31 @@
+body {
+  background-image: url(https://i.imgur.com/OilGEbL.jpg);
+  text-align: center;
+  font-family: 'Bellota', cursive;
+}
+h1 {
+  font-size:60px;
+  color: white;
+  padding: 40px 0;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Fredoka One', cursive;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+  list-style-type: none;
+  padding-left: 0;
+  text-shadow: 2px 2px 2px black;
+}
+a {
+  color: white;
+  font-family: 'Bellota', cursive;
+}
+p {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 30px;
+  padding: 40px 0;
+  font-weight: bold;
+}
