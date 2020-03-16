@@ -14,3 +14,13 @@ form {
   text-shadow: 2px 2px 2px 	#efc681;
   font-size: 30px;
 }
+.button {
+  border-radius: 10px;
+  color: #FDC37D;
+  height: 25px;
+  width: 60px;
+  font-weight: bolder;
+}
+a {
+  font-size: 25px;
+}

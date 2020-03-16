@@ -11,6 +11,8 @@ h1 {
 }
 img {
   height: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #38A028;
 }
 ul {
   display: flex;
@@ -42,4 +44,10 @@ a {
 .link {
   font-size: 20px;
   font-weight: bolder;
+}
+.delete {
+  border-radius: 10px;
+  height: 25px;
+  width: 60px;
+  background-color: #ed3a32;
 }
